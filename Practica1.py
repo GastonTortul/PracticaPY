@@ -1,14 +1,13 @@
-numero = 0
 lista = []
-
-while numero < 101 :
-    lista.append(numero)
-    if (lista[numero]%2) != 0 and (lista[numero]%5) == 0:
-        lista.append(numero)
-    elif (lista[numero]%2) != 0 and (lista[numero]%3) == 0:
-        numero = numero * 2
-        print (numero)
+num = 1
+while num <= 100:
+    if(num%2==0):
+        print(num)
     else:
-        print(numero)
-        
-    numero = numero + 1
+        if(num%3==0):
+            print(num*2)
+        elif(num%5==0):
+            lista.append(num)
+    num+=1
+    
+print(lista)
